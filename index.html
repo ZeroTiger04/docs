@@ -605,10 +605,14 @@
         'scalesProperties.lineColor':                            '#1a2035',
         'scalesProperties.fontSize':                             11,
         'scalesProperties.backgroundColor':                      '#060810',
-        'scalesProperties.showSeriesLastValue':                  true,
-        'scalesProperties.showStudyLastValue':                   true,
-        'scalesProperties.showStudyPlotLabels':                  true,
-        'scalesProperties.showSymbolLabels':                     true,
+        
+        /* ─── ENABLE ALL LABELS ─── */
+        'scalesProperties.showSymbolLabels':                     true, // Symbol Name Label
+        'scalesProperties.showSeriesLastValue':                  true, // Symbol Last Price Label
+        'scalesProperties.showStudyLastValue':                   true, // Indicator Last Value Label
+        'scalesProperties.showStudyPlotLabels':                  true, // Indicator Name Label
+        'scalesProperties.showBidAskLabels':                     true, // Bid and Ask Labels
+        
         /* Candles */
         'mainSeriesProperties.candleStyle.upColor':              '#00e87a',
         'mainSeriesProperties.candleStyle.downColor':            '#ff3a5c',
@@ -617,13 +621,23 @@
         'mainSeriesProperties.candleStyle.wickUpColor':          '#00e87a80',
         'mainSeriesProperties.candleStyle.wickDownColor':        '#ff3a5c80',
         'mainSeriesProperties.candleStyle.barColorsOnPrevClose': false,
-        /* Price / prev close line */
-        'mainSeriesProperties.showPriceLine':                    true,
+        
+        /* ─── ENABLE ALL LINES ─── */
+        'mainSeriesProperties.showPriceLine':                    true, // Price Line
+        'mainSeriesProperties.showPrevClosePriceLine':           true, // Prev Close Price Line
+        
         'mainSeriesProperties.priceLineColor':                   '#c8a84b',
         'mainSeriesProperties.priceLineWidth':                   1,
-        'mainSeriesProperties.showPrevClosePriceLine':           true,
         'mainSeriesProperties.prevClosePriceLineColor':          '#4e5a72',
         'mainSeriesProperties.prevClosePriceLineWidth':          1,
+        
+        // High and Low Price Lines & Labels
+        'mainSeriesProperties.highLowAvgPrice.highLowPriceLabelsVisible': true,
+        'mainSeriesProperties.highLowAvgPrice.highLowPriceLinesVisible':  true,
+        
+        // Average Close Price Line
+        'mainSeriesProperties.highLowAvgPrice.averageClosePriceLineVisible': true,
+
         /* Countdown */
         'mainSeriesProperties.showCountdown':                    true,
         /* Volume */
@@ -632,7 +646,6 @@
       }
     });
 
-    // onChartReady block removed to fix "not a function" error
   }
 
   /* ─── WebSocket ─── */
