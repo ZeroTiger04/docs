@@ -607,11 +607,14 @@
         'scalesProperties.backgroundColor':                      '#060810',
         
         /* ─── ENABLE ALL LABELS ─── */
-        'scalesProperties.showSymbolLabels':                     true, // Symbol Name Label
-        'scalesProperties.showSeriesLastValue':                  true, // Symbol Last Price Label
-        'scalesProperties.showStudyLastValue':                   true, // Indicator Last Value Label
-        'scalesProperties.showStudyPlotLabels':                  true, // Indicator Name Label
-        'scalesProperties.showBidAskLabels':                     true, // Bid and Ask Labels
+        'scalesProperties.showSymbolLabels':                     true, 
+        'scalesProperties.showSeriesLastValue':                  true, 
+        'scalesProperties.showSeriesPrevCloseValue':             true, 
+        'scalesProperties.showStudyLastValue':                   true, 
+        'scalesProperties.showStudyPlotLabels':                  true, 
+        'scalesProperties.showBidAskLabels':                     true, 
+        'scalesProperties.showCurrencyLabel':                    true, 
+        'scalesProperties.showUnitLabel':                        true, 
         
         /* Candles */
         'mainSeriesProperties.candleStyle.upColor':              '#00e87a',
@@ -622,24 +625,28 @@
         'mainSeriesProperties.candleStyle.wickDownColor':        '#ff3a5c80',
         'mainSeriesProperties.candleStyle.barColorsOnPrevClose': false,
         
-        /* ─── ENABLE ALL LINES ─── */
-        'mainSeriesProperties.showPriceLine':                    true, // Price Line
-        'mainSeriesProperties.showPrevClosePriceLine':           true, // Prev Close Price Line
-        
+        /* ─── ENABLE ALL LINES & COUNTDOWN ─── */
+        // Price Line
+        'mainSeriesProperties.showPriceLine':                    true,
         'mainSeriesProperties.priceLineColor':                   '#c8a84b',
         'mainSeriesProperties.priceLineWidth':                   1,
+
+        // Prev Close Price Line
+        'mainSeriesProperties.showPrevClosePriceLine':           true,
         'mainSeriesProperties.prevClosePriceLineColor':          '#4e5a72',
         'mainSeriesProperties.prevClosePriceLineWidth':          1,
         
-        // High and Low Price Lines & Labels
+        // High and Low Price Lines & Labels (High/Low)
         'mainSeriesProperties.highLowAvgPrice.highLowPriceLabelsVisible': true,
         'mainSeriesProperties.highLowAvgPrice.highLowPriceLinesVisible':  true,
         
-        // Average Close Price Line
+        // Average Close Price
         'mainSeriesProperties.highLowAvgPrice.averageClosePriceLineVisible': true,
+        'mainSeriesProperties.highLowAvgPrice.averageClosePriceLabelVisible': true,
 
-        /* Countdown */
+        /* Bar Countdown (Bonk Count) */
         'mainSeriesProperties.showCountdown':                    true,
+
         /* Volume */
         'volume.volume.color.0':                                 '#ff3a5c55',
         'volume.volume.color.1':                                 '#00e87a55',
