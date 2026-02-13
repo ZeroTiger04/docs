@@ -71,21 +71,11 @@
     border-bottom: 1px solid var(--border-dim);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 24px;
     backdrop-filter: blur(12px);
     flex-shrink: 0;
   }
-
-  .logo {
-    font-family: var(--sans);
-    font-weight: 800;
-    font-size: .9rem;
-    letter-spacing: .18em;
-    color: var(--accent);
-    text-transform: uppercase;
-  }
-  .logo span { color: var(--text-sec); font-weight: 400; }
 
   .ws-badge {
     display: flex;
@@ -388,7 +378,6 @@
 
   <!-- HEADER -->
   <header>
-    <div class="logo">CRYPTEX <span>PRO</span></div>
     <div class="ws-badge" id="ws-badge">
       <div class="ws-dot" id="ws-dot"></div>
       <span id="ws-text">CONNECTING...</span>
